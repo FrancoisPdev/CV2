@@ -107,14 +107,14 @@ article em {
 }
 
 /* =========================================================
-   Modale (lien :target — aucun JavaScript requis)
+   Modale — esthétique stoïcienne (marbre & stoa)
    ========================================================= */
 
 .modal {
     display: none;
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(28, 28, 28, 0.75);
     justify-content: center;
     align-items: center;
 }
@@ -124,35 +124,84 @@ article em {
 }
 
 .modal-content {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 500px;
-    margin: 1rem;
+    position: relative;
+    background: linear-gradient(160deg, #f6f4ef 0%, #ece9e2 100%); /* marbre patiné */
+    color: #2b2b2b;
+    font-family: "EB Garamond", Georgia, serif;                 /* gravure classique */
+    padding: 2.5rem 3rem 2rem 3.5rem;                           /* respiration du philosophe */
+    border: 1px solid #c9c4b8;
+    border-radius: 2px;                                         /* angles sobres, presque brut */
+    max-width: 520px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
     text-align: justify;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Petite colonne dorique décorative, côté gauche */
+.modal-colonne {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+    width: 6px;
+    background: repeating-linear-gradient(
+        to bottom,
+        #b9b2a3 0px, #b9b2a3 4px,
+        #d8d3c6 4px, #d8d3c6 8px
+    );                                                          /* cannelures feintes */
+    border-radius: 3px;
+}
+
+.modal-content h3 {
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    border-bottom: 1px solid #c9c4b8;
+    padding-bottom: 0.5rem;
+    margin: 0 0 1rem;
+}
+
+.citation-stoique {
+    font-style: italic;
+    color: #5a5347;
+    font-size: 0.95rem;
+    border-left: 2px solid #a3542e;                             /* terracotta attique */
+    padding-left: 1rem;
+    margin: 0 0 1.25rem;
+}
+
+.citation-stoique cite {
+    display: block;
+    margin-top: 0.35rem;
+    font-style: normal;
+    font-size: 0.85rem;
 }
 
 .close-modal {
     display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #ff4d4d;
-    color: white;
+    margin-top: 1.25rem;
+    padding: 0.4rem 1.2rem;
+    background-color: #a3542e;                                  /* l'unique teinte chaude */
+    color: #f6f4ef;
+    font-family: "Lato", sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .open-modal {
     display: inline-block;
     margin: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    padding: 10px 25px;
+    background-color: #2b2b2b;                                  /* gris de la stoa */
+    color: #f6f4ef;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
-
 /* =========================================================
    Responsive : une seule colonne sur mobile
    ========================================================= */
