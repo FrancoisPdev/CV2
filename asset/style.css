@@ -220,6 +220,29 @@ article em {
     }
 }
 /* =========================================================
+   Badges : médailles en colonne gauche
+   ========================================================= */
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.25rem 0;
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.15);   /* halo discret sur le bleu */
+    border-radius: 8px;
+}
+
+.badges img {
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.badges a:hover img {
+    transform: scale(1.15);   /* la médaille se soulève quand on la cherche */
+}
+/* =========================================================
    Impression : sobriété maximale, encre épargnée
    ========================================================= */
 
@@ -314,4 +337,8 @@ article em {
     @page {
         margin: 1.5cm;
     }
+   .badges img {
+    width: 36px;    /* réduits, mais présents : les médailles se prouvent aussi sur papier */
+    height: 36px;
+}
 }
