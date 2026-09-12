@@ -58,38 +58,43 @@
         <main class="right-column">
 
             <header class="header">
-                <section>
-                    <!-- Lien pour ouvrir la modale -->
-                    <a href="#modal" class="open-modal">Compétences professionnelles</a>
+                <section id="competences" aria-label="Compétences professionnelles">
+    <a href="#modal" class="open-modal" role="button">Compétences professionnelles</a>
 
-                    <!-- Modale : compétences -->
-                    <div id="modal" class="modal">
-                        <div class="modal-content">
-                            <p>
-                                Au cours de ces dernières années, j'ai acquis et développé
-                                plusieurs compétences clés qui me permettent de m'adapter à des
-                                environnements techniques et humains variés. Coder occupe une
-                                place importante (au vu des enjeux du siècle), me permettant de
-                                créer et de résoudre des problèmes de manière logique et
-                                structurée. J'ai également appris à manipuler et configurer
-                                divers appareils, tels que des routeurs, des imprimantes ou des
-                                équipements de télécommunication, ce qui renforce ma
-                                polyvalence technique.
-                            </p>
-                            <p>
-                                Parallèlement, j'ai cultivé des qualités humaines essentielles,
-                                comme l'empathie et le sens de l'écoute. Ces compétences me
-                                permettent d'identifier avec précision les besoins des autres,
-                                que ce soit dans un cadre professionnel ou personnel, et d'y
-                                répondre de manière adaptée. Cette combinaison de savoir-faire
-                                technique et de sensibilité humaine constitue, selon moi, un
-                                atout précieux dans mes projets et collaborations.
-                            </p>
+    <div id="modal" class="modal" role="dialog" aria-modal="true"
+         aria-labelledby="titre-competences">
+        <div class="modal-content">
+            <span class="modal-colonne" aria-hidden="true"></span>
 
-                            <a href="#" class="close-modal">Fermer</a>
-                        </div>
-                    </div>
-                </section>
+            <h3 id="titre-competences">Mes compétences</h3>
+            <blockquote class="citation-stoique">
+                « Bienheureux celui qui, dans la tempête, garde son rameau d'olivier. »
+                <cite>— Cléanthe, hymne à Zeus</cite>
+            </blockquote>
+
+            <p>
+                Au cours de ces dernières années, j'ai acquis et développé
+                plusieurs compétences clés me permettant de m'adapter à des
+                environnements techniques et humains variés. Coder occupe une
+                place importante (au vu des enjeux du siècle), me permettant de
+                créer et de résoudre des problèmes de manière logique et
+                structurée. J'ai également appris à manipuler et configurer
+                divers appareils — routeurs, imprimantes, équipements de
+                télécommunication — ce qui renforce ma polyvalence technique.
+            </p>
+            <p>
+                Parallèlement, je cultive des qualités humaines essentielles,
+                comme l'empathie et le sens de l'écoute. Elles me permettent
+                d'identifier avec précision les besoins d'autrui, en cadre
+                professionnel comme personnel, et d'y répondre de manière
+                adaptée. Cette alliance de savoir-faire technique et de
+                sensibilité humaine constitue, à mes yeux, un atout précieux.
+            </p>
+
+            <a href="#competences" class="close-modal" role="button">Fermer</a>
+        </div>
+    </div>
+</section>
             </header>
 
             <div class="content">
