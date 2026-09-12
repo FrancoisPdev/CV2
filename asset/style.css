@@ -219,3 +219,99 @@ article em {
         grid-template-rows: auto auto;
     }
 }
+/* =========================================================
+   Impression : sobriété maximale, encre épargnée
+   ========================================================= */
+
+@media print {
+
+    /* Fond uni, plein papier — adieu ombres et couleurs de fond */
+    body {
+        background-color: white;
+    }
+
+    .cv-container {
+        display: block;              /* une seule colonne verticale sur papier */
+        max-width: none;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .left-column,
+    .right-column {
+        display: block;
+        padding: 0;
+        background-color: white;
+        color: black;
+    }
+
+    /* La colonne gauche devient un simple bandeau de contact */
+    .left-column figure {
+        display: none;              /* économie d'encre : la photo n'imprime pas */
+    }
+
+    .left-column address {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #999;
+        padding-bottom: 0.5rem;
+    }
+
+    .left-column a,
+    .right-column a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    /* Le bouton d'ouverture de la modale n'a aucune valeur sur papier */
+    .open-modal {
+        display: none;
+    }
+
+    /* MAIS : le contenu de la modale s'imprime, discrètement annexé */
+    .modal {
+        display: block;             /* on force la visibilité, sans le rideau noir */
+        position: static;
+        background: none;
+    }
+
+    .modal-content {
+        max-height: none;
+        overflow: visible;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: none;
+        font-family: inherit;
+    }
+
+    .modal-colonne,
+    .close-modal {
+        display: none;              /* décor et bouton : inutiles sur papier */
+    }
+
+    .citation-stoique {
+        color: #444;
+    }
+
+    /* Articles : jamais coupés en deux par un saut de page */
+    article {
+        background-color: white;
+        border-left: 3px solid #666;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* Titres de section : jamais orphelins en bas de page */
+    h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    /* Marges maîtrisées par nous, pas par le navigateur */
+    @page {
+        margin: 1.5cm;
+    }
+}
