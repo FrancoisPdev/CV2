@@ -1,167 +1,269 @@
-<!--  The <!DOCTYPE> declaration represents the document type, 
-and helps browsers to display web pages correctly.-->
 <!DOCTYPE html>
-<html lang=fr-fr>
-    <head>
-        <title>François PARENT | Accueil </title>
-        <meta charset="UTF-8"> 
-        <!-- Define the character set used-->
-        <meta name="description" content="Mon CV web"> 
-        <!-- Define a description of your web page-->
-        <meta name="authors" content="François PARENT">
-        <!-- Define the author of a page -->
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="HandheldFriendly" content="true">
-        <!-- This will set the view on all screens at a 1×1 aspect ratio and remove the default functionality from iPhones and other mobile devices which render websites at full-view and allow users to zoom into the layout by pinching.-->
-        <link rel="stylesheet" type="text/css" href="asset/style.css" /> <!-- CSS FILES LINK-->
-        <link rel="shortcut icon" type="images/ico" href="images/favicon.ico" /> <!-- FAVicon link-->
-        <!-- Font awesome kit script -->
-        <script src="https://kit.fontawesome.com/7e4e334b97.js"></script>
-    </head>
-<body>
-<div class="cv-container">
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CV web de François PARENT">
+    <meta name="author" content="François Didier PARENT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="left-column">
-                        <h2> Je vous salut et vous remercie d'être passé! </h2>
-                        <p> en bref; après avoir accepté de travailler avec un cabinet de conseil (Aksis) via pôle emploi, 
-                            nous avons convenu que créer un projet dans le milieu social aurait un réel sens significatif. </p>
-        <figure>
-            <img src="images/Forum des possibles - Anouk Desury - 3X0A2132BDNB.jpg" title="an good boy" alt="Name's PARENT François" width="200" height="232" />
-        </figure> 
-        <br /><i class="fab fa-empire" title="My side"> PARENT François</i>
-        <br /><i class="fa-solid fa-mobile-retro"> tel. : 06 52 23 13 02 </i>
-        <br /><i class="fas fa-home" title="home"> 106 BD de Metz APPT 29 | 59000 Lille</i>      
-        <br /><i class="fas fa-envelope" title="courriel"> </i>
-        <a href="mailto:francoisdparent@proton.me" title="me contacter"> francoisdparent@proton.me </a>
-        <br/>
-        <a href="https://github.com/FrancoisPdev" title="go to Github"> <i class="fab fa-github fa-1x"></i>https://urlr.me/HS3NG</a>
-        <br />
-    </div>
-    <div class="right-column">
-        <div class="header">
-            <section>
-                   <!-- Lien pour ouvrir la modale -->
-    <a href="#modal" class="open-modal">Compétences professionnelles</a>
-    <!-- La modale -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <p> Au cours de ces dernières années, j’ai acquis et développé plusieurs compétences clés qui me permettent de m’adapter à des environnements techniques et humains variés. 
-                Coder occupe une place importante (au vu des enjeux du siècle), 
-                me permettant de créer et de résoudre des problèmes de manière logique et structurée. 
-                J’ai également appris à manipuler et configurer divers appareils, tels que des routeurs, 
-                des imprimantes ou des équipements de télécommunication, ce qui renforce ma polyvalence technique.
-                Parallèlement, j’ai cultivé des qualités humaines essentielles, comme l’empathie et le sens de l’écoute. 
-                Ces compétences me permettent d’identifier avec précision les besoins des autres, 
-                que ce soit dans un cadre professionnel ou personnel, et d’y répondre de manière adaptée. 
-                Cette combinaison de savoir-faire technique et de sensibilité humaine constitue selon moi un atout précieux dans mes projets et collaborations.           
+    <title>François Didier PARENT "FDP" | Accueil</title>
+
+    <link rel="stylesheet" type="text/css" href="asset/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/7e4e334b97.js"></script>
+</head>
+
+<body>
+    <div class="cv-container">
+
+        <!-- ==================== Colonne gauche ==================== -->
+        <aside class="left-column">
+            <h2>Je vous salue et vous remercie de votre visite&nbsp;!</h2>
+
+            <p>
+                En bref&nbsp;: après avoir accepté de travailler avec un cabinet de conseil
+                (Aksis) via Pôle emploi, nous avons convenu que créer un projet
+                dans le milieu social aurait un réel sens. Cependant, coder reste pour moi un vrai passe-temps!
             </p>
-            <!-- Lien pour fermer la modale -->
-            <a href="#" class="close-modal">Fermer</a>
-        </div>
+
+            <figure>
+                <img src="images/Forum-des-possibles-Anouk-Desury-3X0A2132BDNB.jpg"
+                     alt="Portrait de François PARENT"
+                     title="Portrait de François PARENT"
+                     width="200" height="232">
+            </figure>
+
+            <address>
+                <i class="fa-solid fa-empire" title="Mon côté obscur"></i>
+                <strong>PARENT François</strong><br>
+
+                <i class="fa-solid fa-mobile-retro" title="Téléphone"></i>
+                06 52 23 13 02<br>
+
+                <i class="fa-solid fa-home" title="Adresse"></i>
+                106 BD de Metz, APPT 29 | 59000 Lille<br>
+
+                <i class="fa-solid fa-envelope" title="Courriel"></i>
+                <a href="mailto:francoisdparent@proton.me" title="Me contacter">
+                    francoisdparent@proton.me
+                </a><br>
+
+                <a href="https://github.com/FrancoisPdev" title="Accéder à mon GitHub">
+                    <i class="fa-brands fa-github"></i> github.com/FrancoisPdev
+                </a>
+            </address>
+        </aside>
+
+        <!-- ==================== Colonne droite ==================== -->
+        <main class="right-column">
+
+            <header class="header">
+                <section>
+                    <!-- Lien pour ouvrir la modale -->
+                    <a href="#modal" class="open-modal">Compétences professionnelles</a>
+
+                    <!-- Modale : compétences -->
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <p>
+                                Au cours de ces dernières années, j'ai acquis et développé
+                                plusieurs compétences clés qui me permettent de m'adapter à des
+                                environnements techniques et humains variés. Coder occupe une
+                                place importante (au vu des enjeux du siècle), me permettant de
+                                créer et de résoudre des problèmes de manière logique et
+                                structurée. J'ai également appris à manipuler et configurer
+                                divers appareils, tels que des routeurs, des imprimantes ou des
+                                équipements de télécommunication, ce qui renforce ma
+                                polyvalence technique.
+                            </p>
+                            <p>
+                                Parallèlement, j'ai cultivé des qualités humaines essentielles,
+                                comme l'empathie et le sens de l'écoute. Ces compétences me
+                                permettent d'identifier avec précision les besoins des autres,
+                                que ce soit dans un cadre professionnel ou personnel, et d'y
+                                répondre de manière adaptée. Cette combinaison de savoir-faire
+                                technique et de sensibilité humaine constitue, selon moi, un
+                                atout précieux dans mes projets et collaborations.
+                            </p>
+
+                            <a href="#" class="close-modal">Fermer</a>
+                        </div>
+                    </div>
+                </section>
+            </header>
+
+            <div class="content">
+
+                <!-- ==================== Formations ==================== -->
+                <section>
+                    <h2>Formations</h2>
+
+                    <article>
+                        <h3>
+                            <time datetime="2024-03-11">11 mars</time> –
+                            <time datetime="2024-07-26">26 juillet 2024</time> :
+                            Manager d'Équipe Relation Client à Distance
+                        </h3>
+                        <p>AFPA Roubaix</p>
+                        <p>
+                            <em>
+                                Après mes expériences de conseiller relation client à distance,
+                                j'ai découvert le métier de N+1. J'en ai conclu que passer la
+                                majeure partie de son temps devant Excel, au détriment du contact
+                                humain, ne correspondait pas à mes aspirations profondes.
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            <time datetime="2023-03-29">29 mars</time> –
+                            <time datetime="2023-06-23">23 juin 2023</time> :
+                            Conseiller Relation Client à Distance
+                        </h3>
+                        <p>TMK Performances</p>
+                        <p>
+                            <em>
+                                L'objectif était de rédiger des SMS, chats, courriels et lettres,
+                                et d'identifier le besoin du client lors d'un appel
+                                (DIVAS, CQQCOQP…).
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            <time datetime="2021-09-20">20 septembre 2020</time> –
+                            <time datetime="2021-07-30">30 juillet 2021</time> :
+                            Technicien Réseaux et Télécommunications d'Entreprise
+                        </h3>
+                        <p>ACTIF CNT Lille</p>
+                        <p>
+                            <em>
+                                Étude des connexions et schémas réseaux (Cisco Packet Tracer,
+                                calcul binaire) et des courants électriques faibles
+                                (branchements Ethernet, configuration de routeurs).
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            <time datetime="2020-04-27">27 avril</time> –
+                            <time datetime="2020-05-27">27 mai 2020</time> :
+                            Apple Foundation Program Extended*
+                        </h3>
+                        <p>Simplon.co</p>
+                        <p>
+                            <em>
+                                Suite au succès de la session précédente, Apple (Californie) et
+                                Simplon ont poursuivi avec un programme 100&nbsp;% en
+                                télétravail, du fait de la pandémie. Ce programme peut déboucher
+                                sur une inscription à l'Apple Developer Academy de Naples (Italie).
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>
+                            <time datetime="2020-03-02">2</time> –
+                            <time datetime="2020-03-27">27 mars 2020</time> :
+                            Apple Foundation Program
+                        </h3>
+                        <p>Simplon.co</p>
+                        <p>
+                            <em>
+                                Initiation à l'iOS avec Swift, en codant une application en
+                                groupe — réalisée à distance suite au COVID-19.
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>2019 / 2020 : Développement mobile / web</h3>
+                        <p>
+                            <em>
+                                Découverte de JavaScript et de son écosystème
+                                (Vue.js, React.js).
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>2018 / 2019 : Intégrateur WordPress</h3>
+                        <p>Simplon.co</p>
+                    </article>
+
+                    <article>
+                        <h3>2018 / 2019 : Méthode Agile</h3>
+                        <p>Simplon.co</p>
+                    </article>
+
+                    <article>
+                        <h3>2018 : Initiation au HTML et CSS3</h3>
+                        <p>Euratechnologies Lille</p>
+                        <p>
+                            <em>
+                                Avec M.&nbsp;Gillon, j'ai suivi mes premières séances de codage
+                                «&nbsp;vanille&nbsp;».
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>2017 : Certificat de Formation à la Gestion Associative (PRAVA-CFGA)</h3>
+                        <p>Pôle Ressources d'Aide à la Vie Associative — MDA Tourcoing</p>
+                        <p>
+                            <em>
+                                Plusieurs modules consistant à comprendre l'articulation et les
+                                financements associatifs, et à valoriser ses expériences en
+                                bénévolat.
+                            </em>
+                        </p>
+                    </article>
+                </section>
+
+                <!-- ==================== Expériences professionnelles ==================== -->
+                <section>
+                    <h2>Expériences professionnelles</h2>
+
+                    <article>
+                        <h3>2023 : Conseiller Clientèle</h3>
+                        <p>Webhelp — Tourcoing</p>
+                        <p>
+                            <em>
+                                Traitement quotidien de virements bancaires, vérification
+                                des nouvelles inscriptions…
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>2021 : HelpDesk</h3>
+                        <p>HelpLine — Villeneuve-d'Ascq</p>
+                        <p>
+                            <em>
+                                Assistance, résolution et dépannage bureautique pour les cadres
+                                de la Société Générale (Défense, Paris).
+                            </em>
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>2019 : Stage Intégrateur Web WordPress</h3>
+                        <p>Le Hub APF — La Plaine Images</p>
+                        <p>
+                            <em>
+                                Ma meilleure expérience&nbsp;: administration du site WordPress
+                                et interventions terrain (colloques, conférences…).
+                            </em>
+                        </p>
+                    </article>
+                </section>
+
+            </div>
+        </main>
+
     </div>
-            </section>
-        </div>
-        <div class="content">
-            <section>
-                <h2>Formations</h2>
-                <p>
-                    <strong>
-                        11 mars au 26 juillet 2024 :
-                    </strong>
-                    Formation Manager d'Equipe Relation Client à Distance | AFPA Roubaix
-                    <br /><i> Après mes experience de conseiller relation à distance, j'ai decouvert le metier de N+1 qui ne m'a pas marqué dans le sens ou passer la majeur partie de sont temps devant Excel et moins de prise d'appel à fait perdre le sens de mes attentes </i>
-                </p> 
-                  <p> 
-                    <strong>
-                        29 mars au 23 juin 2023 :
-                    </strong>
-                    Formation Conseiller Relation Client à distance | TMK Performances
-                    <br /><i> Le but ici etait de savoir rediger des SMS, chats, courriels, lettres et d'identifier le besoin du client lors d'un appel (DIVAS, CQQCOQP...)</i>
-                </p> 
-                <p> 
-                    <strong>
-                        20 septembre au 30 juillet 2021:
-                    </strong>
-                    Formation Technicien Réseaux et Télécommunications d'Entreprise | ACTIF CNT Lille
-                    <br /><i> l'on a etudié à la fois les connexions et schémas réseaux (cisco pacquet tracer, calcul binaire) et les courants éléctriques faible (branchement ethernet, routeur)</i>
-                </p>
-                <p>
-                    <strong>
-                        27 avril au 27 mai 2020 :
-                    </strong>
-                    Apple program foundation Extended* | Simplon.co
-                    <br /><i> Après le succè de la cession precedente, Apple Californie et Simplon, ont fait le souhait de continuer avec un programme 100% en télé-travail; du fait de la pandémie, celle-ci peut déboucher sur une inscription à l'Apple academy de Naple (Italie) selon l'apprenant </i>
-                </p>
-                <p>
-                    <strong>
-                        02 au 27 mars 2020 :
-                    </strong>
-                    Apple program foundation | Simplon.co
-                    <br /><i> Initiation à l'iOS avec SWIFT en codant une app. en groupe - toutefois, celle-ci a etait faite à la maison suite au COVID-19</i>
-                </p>
-                <p>
-                    <strong>
-                        2019 / 2020 :
-                    </strong>
-                    Formation dev. Mobile/web
-                    <br /><i> découverte de javascript et de son écosystème (VU.js, React.js)</i>
-                </p>
-                <p>
-                    <strong>
-                        2018 / 2019 :
-                    </strong>
-                    Formation Intégrateur WordPress | Simplon.co
-                </p>
-                <p>
-                    <strong>
-                        2018 / 2019 :
-                    </strong>
-                    Formation méthode agile | Simplon.co
-                </p>
-                <p>
-                    <strong>
-                        2018 :
-                    </strong>
-                    Initiation au HTML et CSS3 | Euratechnologie Lille
-                    <br /><i> ici avec M. Gillon, j'ai appris mes premières cessions de codage "vanille" </i
-                </p>
-                <p>
-                    <strong>
-                        2017 :
-                    </strong>
-                    Certificat de Formation à la gestion associative (PRAVA-CFGA)Pôle ressources d’Aide à la Vie Associative | MDA Tourcoing
-                <br /><i> plusieurs modules consistant à comprendre l'articulation, les financements associatifs et valoriser ses expériences en benevolat</i>
-                </p>
-            </section>  
-            <section>
-                <h2>Expériences professionnelles</h2>
-                  <p> 
-                    <strong>
-                        2023 :
-                    </strong>
-                    Conseiller Clientèle | Webhelp - Tourcoing
-                    <br /><i> mon travail consistait à faire du transfert de banque au quotidien, verifier les nouvelles inscriptions... </i>
-                </p>
-                <p>
-                    <strong>
-                        2021 :
-                    </strong>
-                    HelpDesk | HelpLine - Villeneuve d'Ascq
-                    <br /><i> assistance, résolution et dépannage bureautique pour cadres (Societe General) de la Defense (Paris)</i>
-                </p>
-                <p>
-                    <strong>
-                        2019 :
-                    </strong>
-                    Stage intégrateur web wordpress | le Hub APF - la Plaine Images
-                    <br /><i> Meilleur expérience à la fois d'administation Wordpress du site et intervention terrain, colloque, conférence... </i>
-                </p>
-            </section>
-        </div>
-        </div>
-    </div>
-</div>
 </body>
-<!-- build taken from BDM-->
 </html>
